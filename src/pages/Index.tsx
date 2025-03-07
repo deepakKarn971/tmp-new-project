@@ -95,48 +95,6 @@ const Index = () => {
             </div>
           ))}
         </div>
-        
-        <div className="rounded-xl border border-border/50 overflow-hidden">
-          <div className="bg-muted/50 px-6 py-4 border-b border-border/50">
-            <h2 className="text-lg font-medium">Recent Activity</h2>
-          </div>
-          <div className="divide-y divide-border/50">
-            {[
-              {
-                title: 'Homepage content updated',
-                description: 'The main hero section was modified',
-                time: '2 hours ago',
-                user: 'Alex Brown'
-              },
-              {
-                title: 'New blog post published',
-                description: 'Article "Design Principles" is now live',
-                time: '5 hours ago',
-                user: 'Sam Wilson'
-              },
-              {
-                title: 'User permissions changed',
-                description: 'Editor role was updated with new capabilities',
-                time: '1 day ago',
-                user: 'Jamie Taylor'
-              }
-            ].map((item, index) => (
-              <div 
-                key={index} 
-                className="px-6 py-4 hover:bg-muted/30 transition-colors flex justify-between items-center"
-              >
-                <div>
-                  <h3 className="font-medium">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm text-muted-foreground">{item.time}</p>
-                  <p className="text-sm">{item.user}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </main>
     </div>
   );
